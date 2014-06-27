@@ -1,0 +1,109 @@
+/* reset by mayer */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1; } 
+ol, ul {list-style: none; }
+blockquote, q {quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none; }
+table {border-collapse: collapse; border-spacing: 0; }
+
+/* top bar */
+.topbar{
+	background: #c4d32e; 
+	background: -moz-linear-gradient(left,  #c4d32e 0%, #c4d32e 13%, #d84b93 13%, #d84b93 25%, #199fcd 25%, #199fcd 37%, #efd314 37%, #efd314 49%, #aa6aaa 49%, #aa6aaa 61%, #6dcacd 61%, #6dcacd 73%, #ee4238 73%, #ee4238 85%, #f48f21 85%, #f48f21 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c4d32e), color-stop(12%,#c4d32e), color-stop(12%,#d84b93), color-stop(25%,#d84b93), color-stop(25%,#199fcd), color-stop(37%,#199fcd), color-stop(37%,#efd314), color-stop(47%,#efd314), color-stop(47%,#aa6aaa), color-stop(62%,#aa6aaa), color-stop(62%,#6dcacd), color-stop(73%,#6dcacd), color-stop(74%,#ee4238), color-stop(86%,#ee4238), color-stop(86%,#f48f21), color-stop(100%,#f48f21));
+	background: -webkit-linear-gradient(left,  #c4d32e 0%,#c4d32e 13%,#d84b93 13%,#d84b93 25%,#199fcd 25%,#199fcd 37%,#efd314 37%,#efd314 49%,#aa6aaa 49%,#aa6aaa 61%,#6dcacd 61%,#6dcacd 73%,#ee4238 73%,#ee4238 85%,#f48f21 85%,#f48f21 100%); 
+	background: -o-linear-gradient(left,  #c4d32e 0%,#c4d32e 13%,#d84b93 13%,#d84b93 25%,#199fcd 25%,#199fcd 37%,#efd314 37%,#efd314 49%,#aa6aaa 49%,#aa6aaa 61%,#6dcacd 61%,#6dcacd 73%,#ee4238 73%,#ee4238 85%,#f48f21 85%,#f48f21 100%); 
+	background: -ms-linear-gradient(left,  #c4d32e 0%,#c4d32e 13%,#d84b93 13%,#d84b93 25%,#199fcd 25%,#199fcd 37%,#efd314 37%,#efd314 49%,#aa6aaa 49%,#aa6aaa 61%,#6dcacd 61%,#6dcacd 73%,#ee4238 73%,#ee4238 85%,#f48f21 85%,#f48f21 100%);
+	background: linear-gradient(to right,  #c4d32e 0%,#c4d32e 13%,#d84b93 13%,#d84b93 25%,#199fcd 25%,#199fcd 37%,#efd314 37%,#efd314 49%,#aa6aaa 49%,#aa6aaa 61%,#6dcacd 61%,#6dcacd 73%,#ee4238 73%,#ee4238 85%,#f48f21 85%,#f48f21 100%);
+	width: 100%; height: 2px;}
+
+/* Helpers */
+.col{max-width: 1170px; margin: auto;}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; } 
+
+/* Colors and bgs */
+header{background: #3a3835; color: #efd314;}
+header a{color: #efd314;}
+.menu{background: #282828;}
+.menu a{color: #c5c6c6;}
+#featured{background: #33322d; color: #c5c6c6;}
+#services{background: #e5e3da; color: #3a3935;}
+#projects{background: #a1628e; color: #FFF;}
+#education{background: #62b1a9; color: #FFF;}
+#contact{background: #5a5a59; color: #c5c6c6;}
+footer{background: #3a3835;color: #c5c6c6;}
+
+/* Tipography */
+h1 a{font:700 30px/48px 'Open Sans', sans-serif; letter-spacing: -1px; text-decoration: none;}
+h2{font:700 26px 'Open Sans', sans-serif;}
+p, li{font:14px/16px arial; padding-bottom: 10px;}
+.menu a{font:17px 'Open Sans', sans-serif; text-decoration: none;}
+.btn{font:700 20px 'Open Sans', sans-serif;}
+
+/* Iconography */
+header .fr li a{border-radius: 50%; width: 39px; height: 39px; border: 1px solid;text-indent: -999px;overflow: hidden;display: block;}
+header .fr li {float: left; display: inline-block; padding-left: 5px;}
+
+/* Header */
+header{padding: 30px 0;}
+
+/* Menu */
+.menu { height: 0px; transition: height 0.7s linear; overflow: hidden;}
+.menu.open{ height: 64px;}
+.menu li{float: left; border-left: 1px solid #3a3935; text-align: center; width: 16%; display: inline-block; padding: 20px 0;}
+.menu li:first-child{border: none;}
+
+/* Featured */
+#featured{padding: 50px 30px; text-align: center;}
+#featured h2{margin-bottom: 30px;}
+.btn{background: #efd314; color: #4d4408; text-decoration: none; border-radius: 3px; display: inline-block; padding: 10px; clear: both;}
+
+/* Services */
+#services {padding: 50px 0;}
+#services h2{text-align: center;}
+#services li{float: left; width: 16.5%;}
+
+/* Projects */
+#projects{padding: 50px 0;}
+#projects h2{text-align: center; padding-bottom: 50px;}
+#projects li{float: left;}
+#projects a{display: block; width: 270px; height: 220px; float: left; text-align: center; background-color: RGBA(0,0,0,0.5); margin: 3px 3px; color: #000; position: relative; 
+text-decoration: none;}
+.projeto span{opacity: 0; -webkit-transition:opacity 0.5s; -moz-transition:opacity 0.5s; transition:opacity 0.5s;
+display: table-cell;position: relative;top: 0;left: 0;background: RGBA(0,0,0,0.5);
+color: #FFF;line-height: 25px;height: 220px;vertical-align: middle;z-index: 2; padding: 15px;}
+.projeto:hover span{opacity: 1;}
+
+.clickon{background: url(../../img/clickon.jpg) 0 0 no-repeat;}
+.dudi{background: url(../../img/dudi.jpg) 0 0 no-repeat;}
+.ddmn{background: url(../../img/ddmn.jpg) 0 0 no-repeat;}
+.hml{background: url(../../img/hml.jpg) 0 0 no-repeat;}
+.animalshow{background: url(../../img/animalshow.jpg) 0 0 no-repeat;}
+.contos{background: url(../../img/contos.jpg) 0 0 no-repeat;}
+.resenhas{background: url(../../img/textos.jpg) 0 0 no-repeat;}
+.lecestino{background: url(../../img/lecestino.jpg) 0 0 no-repeat;}
+.marcandolivro{background: url(../../img/marcandolivro.jpg) 0 0 no-repeat;}
+.qgnet{background: url(../../img/qg-net.jpg) 0 0 no-repeat;}
+.mrp{background: url(../../img/mrp.jpg) 0 0 no-repeat;}
+.momsaga{background: url(../../img/momsaga.jpg) 0 0 no-repeat;}
+.cet{background: url(../../img/cet.jpg) 0 0 no-repeat;}
+.estado{background: url(../../img/estado.jpg) 0 0 no-repeat;}
+
+.clickon:hover{background: url(../../img/clickon-hover.jpg) 0 0 no-repeat;}
+.dudi:hover{background: url(../../img/dudi-hover.jpg) 0 0 no-repeat;}
+.ddmn:hover{background: url(../../img/ddmn-hover.jpg) 0 0 no-repeat;}
+.hml:hover{background: url(../../img/hml-hover.jpg) 0 0 no-repeat;}
+.animalshow:hover{background: url(../../img/animalshow-hover.jpg) 0 0 no-repeat;}
+.contos:hover{background: url(../../img/contos-hover.jpg) 0 0 no-repeat;}
+.resenhas:hover{background: url(../../img/textos-hover.jpg) 0 0 no-repeat;}
+.lecestino:hover{background: url(../../img/lecestino-hover.jpg) 0 0 no-repeat;}
+.marcandolivro:hover{background: url(../../img/marcandolivro-hover.jpg) 0 0 no-repeat;}
+.qgnet:hover{background: url(../../img/qg-net-hover.jpg) 0 0 no-repeat;}
+.mrp:hover{background: url(../../img/mrp-hover.jpg) 0 0 no-repeat;}
+.momsaga:hover{background: url(../../img/momsaga-hover.jpg) 0 0 no-repeat;}
+.cet:hover{background: url(../../img/cet-hover.jpg) 0 0 no-repeat;}
+.estado:hover{background: url(../../img/estado-hover.jpg) 0 0 no-repeat;}
