@@ -38,14 +38,22 @@ header a{color: #efd314;}
 footer{background: #3a3835;color: #c5c6c6;}
 
 /* Tipography */
-h1 a{font:700 30px/48px 'Open Sans', sans-serif; letter-spacing: -1px; text-decoration: none;}
-h2{font:700 26px 'Open Sans', sans-serif;}
+h1 a{font:700 30px/48px 'Source Sans Pro', sans-serif; letter-spacing: -1px; text-decoration: none;}
+h2{font:700 26px 'Source Sans Pro', sans-serif; text-align: center;}
+h3{font:700 18px 'Source Sans Pro', sans-serif; text-align: center;}
 p, li{font:14px/16px arial; padding-bottom: 10px;}
-.menu a{font:17px 'Open Sans', sans-serif; text-decoration: none;}
-.btn{font:700 20px 'Open Sans', sans-serif;}
+.menu a{font:17px 'Source Sans Pro', sans-serif; text-decoration: none;}
+.btn{font:700 20px/63px 'Source Sans Pro', sans-serif;}
 
 /* Iconography */
-header .fr li a{border-radius: 50%; width: 39px; height: 39px; border: 1px solid;text-indent: -999px;overflow: hidden;display: block;}
+header .fr li a, .arrow{border-radius: 50%; width: 39px; height: 39px; border: 1px solid #c4c5c6;text-indent: -999px;overflow: hidden;display: block; background: url('../img/sprite.png') no-repeat}
+header .fr li a:hover, header .fr li a.ativo{border-color: #efd314;}
+header .fr li .twitter{background-position: 7px 10px;}
+header .fr li .twitter:hover{background-position: 7px -113px;}
+header .fr li .fb{background-position: 12px -237px;}
+header .fr li .fb:hover{background-position: 12px -361px;}
+header .fr li .openMenu{background-position: 8px -981px;}
+header .fr li .openMenu:hover, header .fr li .openMenu.ativo{background-position: 8px -1105px;}
 header .fr li {float: left; display: inline-block; padding-left: 5px;}
 
 /* Header */
@@ -60,50 +68,65 @@ header{padding: 30px 0;}
 /* Featured */
 #featured{padding: 50px 30px; text-align: center;}
 #featured h2{margin-bottom: 30px;}
-.btn{background: #efd314; color: #4d4408; text-decoration: none; border-radius: 3px; display: inline-block; padding: 10px; clear: both;}
+.btn{background: url(../img/sprite.png) no-repeat -11px -1216px; color: #4d4408; text-decoration: none; display: inline-block; width: 220px; height: 63px; text-align: center; margin: 15px auto;}
+.arrow{background-position: 8px -483px; margin: auto}
 
 /* Services */
 #services {padding: 50px 0;}
-#services h2{text-align: center;}
-#services li{float: left; width: 16.5%;}
+#services h2{text-align: center; padding: 0 0 10px;}
+#services h3{padding: 10px 0;}
+.servicos li{float: left; width: 16.5%; -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box; padding: 0 10px; }
+.servicos li .ico{display: block;margin: auto; overflow: hidden; background: url(../img/sprite.png) no-repeat; min-height: 90px; margin-bottom: 5px;}
+.servicos .design .ico{background-position: -2px -582px; width: 100px;height: 78px;}
+.servicos .webdev .ico{background-position: -2px -1328px; width: 97px;height: 59px;}
+.servicos .responsivo .ico{background-position: -2px -830px; width: 47px; height: 78px;}
+.servicos .crossbrowser .ico{background-position:  0 -2088px; width: 87px;height: 90px;}
+.servicos .wp .ico{background-position: 0 -701px; width: 77px; height: 77px;}
+.servicos .emailmkt .ico{background-position: -2px -1451px; width: 79px; height: 79px;}
 
 /* Projects */
 #projects{padding: 50px 0;}
 #projects h2{text-align: center; padding-bottom: 50px;}
 #projects li{float: left;}
-#projects a{display: block; width: 270px; height: 220px; float: left; text-align: center; background-color: RGBA(0,0,0,0.5); margin: 3px 3px; color: #000; position: relative; 
-text-decoration: none;}
+.carrossel{position: relative;}
+.before{background: url(../img/sprite.png) no-repeat -2px -1579px;width: 45px;height: 81px;position: absolute; top: 34%; left: -20px; text-indent: -999px;overflow: hidden; cursor: pointer;}
+.after{background: url(../img/sprite.png) no-repeat -2px -1703px;width: 45px;height: 81px;position: absolute; top: 34%; right: -20px; text-indent: -999px;overflow: hidden; cursor: pointer;}
+.carrossel ul{position: relative;margin-left: 0px;}
+#projects a{display: block; width: 270px; height: 220px; float: left; text-align: center; background-color: RGBA(0,0,0,0.5); margin: 3px 3px; color: #000; position: relative; text-decoration: none;}
 .projeto span{opacity: 0; -webkit-transition:opacity 0.5s; -moz-transition:opacity 0.5s; transition:opacity 0.5s;
 display: table-cell;position: relative;top: 0;left: 0;background: RGBA(0,0,0,0.5);
-color: #FFF;line-height: 25px;height: 220px;vertical-align: middle;z-index: 2; padding: 15px;}
+color: #FFF;line-height: 25px;height: 190px;vertical-align: middle;z-index: 2; padding: 15px;}
 .projeto:hover span{opacity: 1;}
+.box{display: none;}
 
-.clickon{background: url(../../img/clickon.jpg) 0 0 no-repeat;}
-.dudi{background: url(../../img/dudi.jpg) 0 0 no-repeat;}
-.ddmn{background: url(../../img/ddmn.jpg) 0 0 no-repeat;}
-.hml{background: url(../../img/hml.jpg) 0 0 no-repeat;}
-.animalshow{background: url(../../img/animalshow.jpg) 0 0 no-repeat;}
-.contos{background: url(../../img/contos.jpg) 0 0 no-repeat;}
-.resenhas{background: url(../../img/textos.jpg) 0 0 no-repeat;}
-.lecestino{background: url(../../img/lecestino.jpg) 0 0 no-repeat;}
-.marcandolivro{background: url(../../img/marcandolivro.jpg) 0 0 no-repeat;}
-.qgnet{background: url(../../img/qg-net.jpg) 0 0 no-repeat;}
-.mrp{background: url(../../img/mrp.jpg) 0 0 no-repeat;}
-.momsaga{background: url(../../img/momsaga.jpg) 0 0 no-repeat;}
-.cet{background: url(../../img/cet.jpg) 0 0 no-repeat;}
-.estado{background: url(../../img/estado.jpg) 0 0 no-repeat;}
+.clickon{background: url(../img/clickon.jpg) 0 0 no-repeat;}
+.dudi{background: url(../img/dudi.jpg) 0 0 no-repeat;}
+.ddmn{background: url(../img/ddmn.jpg) 0 0 no-repeat;}
+.hml{background: url(../img/hml.jpg) 0 0 no-repeat;}
+.animalshow{background: url(../img/animalshow.jpg) 0 0 no-repeat;}
+.contos{background: url(../img/contos.jpg) 0 0 no-repeat;}
+.resenhas{background: url(../img/textos.jpg) 0 0 no-repeat;}
+.lecestino{background: url(../img/lecestino.jpg) 0 0 no-repeat;}
+.marcandolivro{background: url(../img/marcandolivro.jpg) 0 0 no-repeat;}
+.qgnet{background: url(../img/qg-net.jpg) 0 0 no-repeat;}
+.mrp{background: url(../img/mrp.jpg) 0 0 no-repeat;}
+.momsaga{background: url(../img/momsaga.jpg) 0 0 no-repeat;}
+.cet{background: url(../img/cet.jpg) 0 0 no-repeat;}
+.estado{background: url(../img/estado.jpg) 0 0 no-repeat;}
 
-.clickon:hover{background: url(../../img/clickon-hover.jpg) 0 0 no-repeat;}
-.dudi:hover{background: url(../../img/dudi-hover.jpg) 0 0 no-repeat;}
-.ddmn:hover{background: url(../../img/ddmn-hover.jpg) 0 0 no-repeat;}
-.hml:hover{background: url(../../img/hml-hover.jpg) 0 0 no-repeat;}
-.animalshow:hover{background: url(../../img/animalshow-hover.jpg) 0 0 no-repeat;}
-.contos:hover{background: url(../../img/contos-hover.jpg) 0 0 no-repeat;}
-.resenhas:hover{background: url(../../img/textos-hover.jpg) 0 0 no-repeat;}
-.lecestino:hover{background: url(../../img/lecestino-hover.jpg) 0 0 no-repeat;}
-.marcandolivro:hover{background: url(../../img/marcandolivro-hover.jpg) 0 0 no-repeat;}
-.qgnet:hover{background: url(../../img/qg-net-hover.jpg) 0 0 no-repeat;}
-.mrp:hover{background: url(../../img/mrp-hover.jpg) 0 0 no-repeat;}
-.momsaga:hover{background: url(../../img/momsaga-hover.jpg) 0 0 no-repeat;}
-.cet:hover{background: url(../../img/cet-hover.jpg) 0 0 no-repeat;}
-.estado:hover{background: url(../../img/estado-hover.jpg) 0 0 no-repeat;}
+.clickon:hover{background: url(../img/clickon-hover.jpg) 0 0 no-repeat;}
+.dudi:hover{background: url(../img/dudi-hover.jpg) 0 0 no-repeat;}
+.ddmn:hover{background: url(../img/ddmn-hover.jpg) 0 0 no-repeat;}
+.hml:hover{background: url(../img/hml-hover.jpg) 0 0 no-repeat;}
+.animalshow:hover{background: url(../img/animalshow-hover.jpg) 0 0 no-repeat;}
+.contos:hover{background: url(../img/contos-hover.jpg) 0 0 no-repeat;}
+.resenhas:hover{background: url(../img/textos-hover.jpg) 0 0 no-repeat;}
+.lecestino:hover{background: url(../img/lecestino-hover.jpg) 0 0 no-repeat;}
+.marcandolivro:hover{background: url(../img/marcandolivro-hover.jpg) 0 0 no-repeat;}
+.qgnet:hover{background: url(../img/qg-net-hover.jpg) 0 0 no-repeat;}
+.mrp:hover{background: url(../img/mrp-hover.jpg) 0 0 no-repeat;}
+.momsaga:hover{background: url(../img/momsaga-hover.jpg) 0 0 no-repeat;}
+.cet:hover{background: url(../img/cet-hover.jpg) 0 0 no-repeat;}
+.estado:hover{background: url(../img/estado-hover.jpg) 0 0 no-repeat;}
